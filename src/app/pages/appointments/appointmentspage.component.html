@@ -1,0 +1,26 @@
+<div class="pb-5 my-5 height">
+    <h1 class="text-center text-danger">VOICI VOS RESERVATIONS AINSI QUE VOTRE PASS SANITAIRE</h1>
+    <div class="height">
+        <ul class="list-group w-75 m-auto my-5">
+            <li *ngFor="let appointment of appointments" class="list-group-item" >
+                <div class="list-group-item list-group-item-secondary d-flex justify-content-around">
+                    <div class="text-center w-50 list-group-item-secondary">Date rendez-vous :</div>
+                    <div class="text-center w-50 list-group-item-secondary">{{ appointment.date }}</div>
+                </div>
+                <div class="list-group-item list-group-item-secondary d-flex justify-content-around">
+                    <div class="text-center list-group-item-secondary w-50">Emplacement:</div>
+                    <div class="text-center  list-group-item-secondary w-50">{{ appointment.location }}</div>
+                </div>
+                <div class="list-group-item  list-group-item-secondary d-flex justify-content-around">
+                    <div class="text-center  list-group-item-secondary w-50">Statut :</div>
+                    <div class="text-center list-group-item-secondary w-50">{{ appointment.status }}</div>
+                </div>
+                <div *ngIf="appointment.status !== 'Available'" class="list-group-item d-flex justify-content-around">
+                    <div class="">Pass Sanitaire :</div>
+                    <button *ngIf="appointment.status === 'Missed'" (click)="reschedule()" class="btn btn-sm btn-warning">Reprogrammer</button>
+                    <button *ngIf="appointment.status === 'Taken'" (click)="getPass()" class="btn btn-sm btn-success">Obtenir pass sanitaire</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

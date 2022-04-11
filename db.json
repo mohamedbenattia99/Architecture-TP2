@@ -1,0 +1,86 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Mohamed Ben Attia",
+      "cin": "14327522",
+      "evaxCode": "1234568795485612123",
+      "email": "mohamedbenattia@gmail.con",
+      "phone": "92856420"
+    },
+    {
+      "id": 2,
+      "name": "Mohamed Attia",
+      "cin": "03273422",
+      "evaxCode": "1234568795485612123",
+      "email": "mohamedbenattia@gmail.con",
+      "phone": "92856420"
+    },
+    {
+      "id": 3,
+      "name": "Khalil Ouertani",
+      "cin": "12322322",
+      "evaxCode": "1234568795485612123",
+      "email": "mohamedbenattia@gmail.con",
+      "phone": "92856420"
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "date": "19-02-2022",
+      "location": "Centre Culturel Menzah 6, Ariana, 2080",
+      "status": "Raté"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "date": "15-10-2021",
+      "location": "INSAT, Centre Urbain Nord, Tunisie",
+      "status": "C'est Bon"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "date": "07/03/2022",
+      "location": "Maison des jeunes, Marsa, Tunisie",
+      "status": "Disponible"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "date": "10/6/2021",
+      "location": "Chargueya - CUN - Tunis",
+      "status": "C'est Bon"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "date": "12/12/2021",
+      "location": "Chargueya - CUN - Tunis",
+      "status": "C'est Bon"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "date": "15/12/2021",
+      "location": "Dar Chaabane - Nabeul, Tunisie",
+      "status": "C'est Bon"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "date": "01/04/2022",
+      "location": "Dar Chaabane - Nabeul",
+      "status": "C'est Bon"
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "date": "27/06/2022",
+      "location": "Centre Menzah 6, Marsa, Tunisie",
+      "status": "Disponible"
+    }
+  ]
+}

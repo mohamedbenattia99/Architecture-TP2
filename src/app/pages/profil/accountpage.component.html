@@ -1,0 +1,47 @@
+<div class="bordered p-5 mt-4 view-height">
+    <h2 class="text-center mb-5">Vos informations Personnelles</h2>
+    <div class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">Nom et Prénom :</div>
+        <div class="col">{{ currentUser.name }}</div>
+    </div>
+    <div class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">Code Evax</div>
+        <div class="col">
+            {{ currentUser.evaxCode }}
+            <button (click)="changeCode()" class="mx-5 btn btn-warning">Modifier</button>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">N° Carte Identité Nationale : </div>
+        <div class="col">{{ currentUser.cin }}</div>
+    </div>
+  
+    <form  class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">
+            <label for="phone">Adresse Mail :</label>
+        </div>
+        <div class="col">
+            <input type="text" name="email" [(ngModel)]="email">
+            <button class="mx-5 btn btn-warning" (click)="changeEmail()">Modifier</button>
+        </div>
+    </form>
+    <form class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">
+            <label for="phone">Numéro de Téléphone :</label>
+        </div>
+        <div class="col">
+            <input type="text" name="phone" [(ngModel)] ="phone">
+            <button class="mx-5 btn btn-warning" (click)="changePhone()">Modifier</button>
+        </div>
+    </form>
+    <div class="d-flex justify-content-center mt-5">
+        <div>
+            <a [routerLink]="['/me/appointment']" class="btn btn-lg btn-danger">Consulter mes Rendez-Vous</a>
+        </div>
+    </div>
+</div>
